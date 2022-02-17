@@ -1,0 +1,366 @@
+@font-face {
+  font-family: "youth";
+  src: url("res/fonts/youth.ttf");
+}
+
+@font-face {
+  font-family: "delius";
+  src: url("res/fonts/delius.ttf");
+}
+
+@font-face {
+  font-family: "delius-bold";
+  src: url("res/fonts/delius-bold.ttf");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  /* background-color: rgb(255, 255, 255);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative; */
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  margin: 0px auto;
+  font-family: "delius-bold";
+  line-height: 7vh;
+}
+h2,
+h3,
+h4 {
+  font-family: "delius-bold";
+  font-size: calc(10px + 1vh);
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+p {
+  font-size: calc(10px + 1vh);
+  margin: 0;
+}
+
+strong {
+  color: rgb(228, 176, 24);
+  font-size: calc(10px + 0.5vh);
+  font-family: "delius-bold";
+}
+
+/*
+ *
+ *  Header
+ *
+ */
+
+@media screen and (min-width: 800px) {
+  .item.padding {
+    padding-top: 100px;
+  }
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url(res/back.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-family: "delius";
+  text-align: center;
+  font-size: min(3vh, 20px);
+  text-shadow: 0px 0px 20px black;
+  line-height: normal;
+}
+
+.social {
+  padding: 5vh;
+  width: 40vw;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header #logo {
+  height: 35vh;
+}
+
+header .icons-wrapper {
+  color: rgb(228, 176, 24);
+  font-size: 1.5vh;
+  font-family: "delius-bold";
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 2vh 0px 3vh 0px;
+}
+
+header .icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+header .icon-wrapper.yellow {
+  color: rgb(228, 176, 24);
+}
+
+header p {
+  font-size: 1.5vh;
+}
+
+header .icon {
+  height: 10vh;
+  padding: 10px;
+}
+
+/* SOCIAL LOGOS */
+#fb {
+  background-image: url(res/social_logos/fb.png);
+}
+
+#ig {
+  background-image: url(res/social_logos/ig.png);
+}
+
+#mail {
+  background-image: url(res/social_logos/mail.png);
+}
+
+.sociallogo {
+  width: 30px;
+  height: 30px;
+  opacity: 80%;
+  background-size: cover;
+}
+
+/*
+ *
+ * Section
+ *
+ */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "delius";
+  font-size: 20px;
+  padding-bottom: 5vh;
+  background-size: 200px;
+
+  background-image: url(res/crumbs/crumbs3.png), url(res/crumbs/crumbs2.png);
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+}
+
+section.biscuits {
+  background: none;
+  background-size: 200px;
+  background-image: url(res/crumbs/crumbs5.png), url(res/crumbs/crumbs3.png), url(res/crumbs/crumbs.png);
+  background-position: left center, right bottom, right top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+section.map {
+  background: none;
+}
+
+section.border {
+  border-top: solid 10px rgb(228, 176, 24);
+}
+
+section .innersection {
+  max-width: 1200px;
+  width: 100%;
+}
+
+section .paragraph {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+section .para {
+  /* font-family: "komika"; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: normal;
+  color: #555;
+  min-width: 2vw;
+}
+
+section .para.right {
+  text-align: right;
+  /* padding-right: 5%; */
+  /* padding-left: 0px; */
+}
+
+section .icon {
+  height: 11vh;
+  /* padding: 20px; */
+}
+
+section h1 {
+  text-align: center;
+  padding: 7vh 5vw 3vh 5vw;
+  font-family: "youth";
+  font-size: 8vh;
+  /* width: 100%; */
+  /* background-image: url(res/crumbs/crumbs-title.png);
+  background-position: center bottom;
+  background-size: 300px;
+  background-repeat: no-repeat; */
+  color: #444;
+  font-weight: normal;
+}
+
+section h1.crumbs {
+  background-image: url(res/crumbs/crumbs-title.png);
+  background-position: center bottom;
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+
+section h1.yellow {
+  color: rgb(228, 176, 24);
+}
+
+section.h2 {
+}
+
+section.p {
+}
+
+section h1.find {
+  background-image: url(res/chouette-find.png);
+  background-position: 90% bottom;
+  background-size: max(10vw, 100px);
+  background-repeat: no-repeat;
+}
+
+section.biscuits strong {
+  color: #555;
+}
+
+section.biscuits p {
+  color: rgb(228, 176, 24);
+}
+
+/*
+ *
+ * Section team
+ *
+ */
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "delius-bold";
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 20px; */
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.images .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  max-width: 150px;
+  /* padding: calc(20px + 2.5vw); */
+  /* font-size: 16px; */
+  color: #444;
+  font-size: 22px;
+  font-family: "delius";
+  margin-bottom: 2vh;
+}
+
+.images .item img {
+  /* width: 130px; */
+  height: 20vh;
+  max-height: 130px;
+  border: solid 2px rgb(228, 176, 24);
+  padding: 2px;
+  margin-bottom: 2vh;
+  border-radius: 200px;
+}
+
+/*
+ *
+ * Map section
+ *
+ */
+
+.innersection-map {
+  width: 100vw;
+}
+
+#map {
+  border-top: solid 10px rgb(228, 176, 24);
+  border-bottom: solid 10px rgb(228, 176, 24);
+  height: 40vh;
+  background-color: grey;
+}
+
+.gm-style-cc {
+  display: none;
+}
+
+.gm-style-iw-t {
+  font-family: "delius";
+}
+.gm-style-iw-t strong {
+  font-family: "delius";
+  text-decoration: none;
+}
+
+/*
+ *
+ * Footer section
+ *
+ */
+footer {
+  font-family: "delius";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(res/back.jpg);
+  color: rgb(230, 2380 230);
+  margin-top: 5vh;
+  padding-bottom: 3vh;
+}
+
+footer .social {
+  padding-bottom: 10px;
+}
+footer p {
+  font-size: 10px;
+  padding-top: 10px;
+}
