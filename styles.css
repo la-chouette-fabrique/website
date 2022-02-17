@@ -294,7 +294,7 @@ section.biscuits p {
   /* padding: calc(20px + 2.5vw); */
   /* font-size: 16px; */
   color: #444;
-  font-size: 22px;
+  /* font-size: 22px; */
   font-family: "delius";
   margin-bottom: 2vh;
 }
@@ -330,6 +330,7 @@ section.biscuits p {
   display: none;
 }
 
+.gm-style,
 .gm-style-iw-t {
   font-family: "delius";
 }
