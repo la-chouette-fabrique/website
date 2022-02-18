@@ -106,7 +106,7 @@ header .icons-wrapper {
   justify-content: space-around;
   width: 100%;
   background-color: rgb(0, 0, 0, 0.6);
-  padding: 2vh 0px 3vh 0px;
+  padding: 1vh 0px 2vh 0px;
 }
 
 header .icon-wrapper {
@@ -116,6 +116,7 @@ header .icon-wrapper {
   align-items: center;
   color: white;
   text-align: center;
+  min-width: 12vw;
 }
 header .icon-wrapper.yellow {
   color: rgb(228, 176, 24);
