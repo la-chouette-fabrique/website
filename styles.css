@@ -62,7 +62,10 @@ strong {
 
 @media screen and (min-width: 800px) {
   .item.padding {
-    padding-top: 100px;
+    margin-top: 100px;
+  }
+  .item.paddingx2 {
+    margin-top: 150px;
   }
 }
 
